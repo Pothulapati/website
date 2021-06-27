@@ -83,7 +83,6 @@
           {%- if config.extra.zola or config.extra.zola is undefined -%}Built with <a href="https://www.getzola.org/">Zola</a>{%- endif -%}
           {%- if config.extra.netlify %} & hosted on <a href="https://netlify.com">Netlify</a>{%- endif -%}
           {%- if config.extra.zola or config.extra.zola is undefined -%}.<br />{%- endif %}
-          {% if config.extra.maintained_with_love or config.extra.maintained_with_love is undefined%}Maintained with &hearts; for the web.<br />{% endif %}
           {% if config.extra.footer_tagline %}{{ config.extra.footer_tagline }}{% endif %}
         </small>
         {% endblock taglines %}
