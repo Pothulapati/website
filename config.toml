@@ -17,7 +17,8 @@ highlight_code = true
 
 [extra]
 
-footer_links = [
+header_links = [
+    {url = "$BASE_URL", name = "Posts"},
     {url = "$BASE_URL/talks", name = "Talks"},
     {url = "$BASE_URL/projects", name = "Projects"},
     {url = "$BASE_URL/about", name = "About"},
