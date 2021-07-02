@@ -23,7 +23,7 @@
       <meta property="og:description" content="{% block ogdesc %}{{config.description}}{% endblock ogdesc %}">
       <meta property="og:url" content="{% block ogurl %}{{config.base_url | safe }}{% endblock ogurl %}">
       <meta property="og:image" content="{% block ogimage %}{% if config.extra.ogimage %}{{ get_url(path=config.extra.ogimage) | safe }}{% endif %}{% endblock ogimage %}">
-
+      <script src="https://unpkg.com/feather-icons" crossorigin="anonymous"></script>
       {% if page.date -%}
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content="{{ page.date | date(format="%+") }}" />
@@ -79,6 +79,13 @@
         <hr />
         {% block taglines %}
         <small>
+          <div>
+            <a href="https://github.com/pothulapati" title="Github"><i data-feather="github"></i></a>
+            <a href="https://twitter.com/pothulapati" title="Twitter"><i data-feather="twitter"></i></a>
+            <a href="https://www.linkedin.com/in/tpothulapati/" title="Linkedin"><i data-feather="linkedin"></i></a>
+            <a href="mailto:tarunpothulapati@outlook.com" title="email"><i data-feather="mail"></i></a>
+            <a href="https://www.youtube.com/c/TarunPothulapatiDev" title="Youtube"><i data-feather="youtube"></i></a>
+          </div>
           {%- if config.extra.zola or config.extra.zola is undefined -%}Built with <a href="https://www.getzola.org/">Zola</a>{%- endif -%}
           {%- if config.extra.netlify %} & hosted on <a href="https://netlify.com">Netlify</a>{%- endif -%}
           {%- if config.extra.zola or config.extra.zola is undefined -%}.<br />{%- endif %}
@@ -87,10 +94,12 @@
         {% endblock taglines %}
       </footer>
       {% endblock footer %}
-
     </main>
     {% block after_main %}
     {% endblock after_main %}
+    <script>
+    feather.replace();
+    </script>
   </body>
 </html>
 
