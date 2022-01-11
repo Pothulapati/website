@@ -24,9 +24,9 @@ Some of these expensive hardware items were part of swags for speaking in virtua
 - [1password](https://1password.com/): For password management. Would definitely recommend this.
 - [OhmyZsh](https://ohmyz.sh/): Zsh and Oh My Zsh for the Shell. Along with [Alacritty](https://github.com/jwilm/alacritty) as the terminal emulator.
 - [Vs Code](https://code.visualstudio.com/): Current Editor. Really love using it because of all the awesome ecosystem and flexibility. Extensions that I can't live without
-    - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim): For all the Vim emulation.
-    - [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github): Highly Recommended if your company/project is using GitHub.
-    - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): Awesome abstraction for Git. Very useful with interactive rebase, and Git Intellisense in the editor.
-    - [Github Theme](https://marketplace.visualstudio.com/items?itemName=ms-vscode.github): Primary Themes.
-    - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens): Error Highlighting in the editor. Still can't understand how its not in-built into Vs Code.
-    - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Would make a lot of spelling mistakes if it wasn't for this extension. 
+  - [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim): For all the Vim emulation.
+  - [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github): Highly Recommended if your company/project is using GitHub.
+  - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): Awesome abstraction for Git. Very useful with interactive rebase, and Git Intellisense in the editor.
+  - [Github Theme](https://marketplace.visualstudio.com/items?itemName=ms-vscode.github): Primary Themes.
+  - [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens): Error Highlighting in the editor. Still can't understand how its not in-built into Vs Code.
+  - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Would make a lot of spelling mistakes if it wasn't for this extension.
