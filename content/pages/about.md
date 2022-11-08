@@ -3,7 +3,9 @@ title= "About"
 path= "about"
 +++
 
-Hey! My Name is Tarun Pothulapati, Currently, I work at [Buoyant](https://www.buoyant.io), where I focus on [Linkerd](https://www.linkerd.io) which is a CNCF incubated service mesh project.
+Hey! My Name is Tarun Pothulapati, Currently, I work at [Gitpod](https://www.gitpod.io), where I work on making self-hosted Gitpod
+and some other things possible. Previously, I was a maintainer of
+[Linkerd](https://www.linkerd.io).
 
 I enjoy learning/working on underlying technologies i.e systems, networking (duh), infra, etc.
 Usually we don't really think about them until they break, which is pretty awesome, right?
