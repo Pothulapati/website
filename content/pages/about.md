@@ -5,7 +5,7 @@ path= "about"
 
 Hey! My Name is Tarun Pothulapati, Currently, I work at [DragonflyDB](https://www.dragonflydb.io), where I work on deployments of Dragonfly specifically the [Managed Offering](https://www.dragonflydb.io/cloud).
 
-Before this, I was in the self-hosted team of [Gitpod](https://www.gitpod.io), where I worked on making Gitpod self-hosted and some other things possible.
+Before this, I was in the self-hosted team of [Gitpod](https://www.gitpod.io).
 
 And before that, I was a maintainer of [Linkerd](https://www.linkerd.io) working at [Buoyant](https://buoyant.io).
 
