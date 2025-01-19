@@ -1,14 +1,52 @@
+:root {
+	--background: #fffaf7;
+	--text: #2d2d2d;
+	--text-muted: #666;
+	--link: darkred;
+	--border: #eee;
+	--card-bg: white;
+	--card-hover-shadow: rgba(0,0,0,0.1);
+	--featured-gradient-start: #fff8f5;
+	--featured-gradient-end: #fff2eb;
+	--featured-border: #ff6b4a;
+	--featured-shadow: rgba(255, 107, 74, 0.1);
+	--featured-hover-shadow: rgba(255, 107, 74, 0.15);
+	--date-color: #666;
+	--newsletter-bg: #f8f9fa;
+	--pre-bg: white;
+	--table-border: #2d2d2d;
+}
+
+[data-theme="dark"] {
+	--background: #1a1a1a;
+	--text: #e0e0e0;
+	--text-muted: #a0a0a0;
+	--link: #ff8585;
+	--border: #333;
+	--card-bg: #242424;
+	--card-hover-shadow: rgba(255,255,255,0.1);
+	--featured-gradient-start: #2a1f1d;
+	--featured-gradient-end: #2a1a15;
+	--featured-border: #ff6b4a;
+	--featured-shadow: rgba(255, 107, 74, 0.2);
+	--featured-hover-shadow: rgba(255, 107, 74, 0.25);
+	--date-color: #a0a0a0;
+	--newsletter-bg: #242424;
+	--pre-bg: #242424;
+	--table-border: #666;
+}
+
 html,
 body {
-	background: #fffaf7;
-	color: #2d2d2d;
+	background: var(--background);
+	color: var(--text);
 	font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
 		"Segoe UI Symbol";
 }
 a,
 a:visited {
-	color: darkred;
+	color: var(--link);
 	text-decoration: none;
 }
 a:hover {
@@ -20,12 +58,12 @@ main {
 	padding: 0.8rem 4rem;
 }
 pre {
-	background: white;
+	background: var(--pre-bg);
 	overflow: scroll;
 	padding: 1rem;
 }
 td {
-	border: 1px solid #2d2d2d;
+	border: 1px solid var(--table-border);
 	padding: 10px;
 }
 img {
@@ -48,24 +86,129 @@ img {
 		width: 100%;
 	}
 }
+.link-card {
+	background: var(--card-bg);
+	border: 1px solid var(--border);
+	
+	&:hover {
+		box-shadow: 0 4px 12px var(--card-hover-shadow);
+	}
+}
 .link-card.featured {
-	background: linear-gradient(135deg, #fff8f5, #fff2eb);
-	border: 2px solid #ff6b4a;
-	transform: scale(1.02);
-	box-shadow: 0 4px 12px rgba(255, 107, 74, 0.1);
+	background: linear-gradient(135deg, var(--featured-gradient-start), var(--featured-gradient-end));
+	border: 2px solid var(--featured-border);
+	box-shadow: 0 4px 12px var(--featured-shadow);
 	
 	strong {
-		color: #ff6b4a;
+		color: var(--featured-border);
 	}
 	
 	&:hover {
-		transform: scale(1.03);
-		box-shadow: 0 6px 16px rgba(255, 107, 74, 0.15);
+		box-shadow: 0 6px 16px var(--featured-hover-shadow);
 	}
 }
 .date {
-	color: #666;
+	color: var(--date-color);
 	font-size: 0.9rem;
 	margin-top: -0.5rem;
 	margin-bottom: 2rem;
+}
+
+/* Theme toggle styles */
+.theme-toggle {
+	background: none;
+	border: none;
+	padding: 0.5rem;
+	cursor: pointer;
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	z-index: 1000;
+	color: var(--text);
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	transition: background-color 0.3s;
+	
+	&:hover {
+		background: var(--border);
+	}
+	
+	svg {
+		width: 20px;
+		height: 20px;
+		fill: currentColor;
+	}
+}
+
+.home-content h1 {
+	color: var(--link);
+}
+
+.home-content h2 {
+	color: var(--text-muted);
+}
+
+.connect h2 {
+	color: var(--text);
+}
+
+.link-card span {
+	color: var(--text-muted);
+}
+
+.social-links a {
+	color: var(--text-muted);
+	&:hover {
+		color: var(--link);
+	}
+}
+
+.outro {
+	color: var(--text-muted);
+}
+
+.project-item p {
+	color: var(--text);
+}
+
+.blog-card p {
+	color: var(--text);
+}
+
+.newsletter-section {
+	background: var(--newsletter-bg);
+	
+	p {
+		color: var(--text-muted);
+	}
+	
+	h2 {
+		color: var(--link);
+	}
+	
+	small {
+		color: var(--text-muted);
+	}
+	
+	input[type="email"] {
+		background: var(--card-bg);
+		border-color: var(--border);
+		color: var(--text);
+		
+		&::placeholder {
+			color: var(--text-muted);
+		}
+	}
+}
+
+.newsletter-close {
+	color: var(--text-muted);
+	&:hover {
+		color: var(--link);
+	}
 }

@@ -1,7 +1,7 @@
 {% import "macros.html" as macros %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   {% block head %}
   <head>
     <meta charset="UTF-8" />
@@ -25,7 +25,8 @@
         padding: 0;
         font-family: system-ui, -apple-system, sans-serif;
         line-height: 1.6;
-        color: #2c3e50;
+        color: var(--text);
+        background: var(--background);
       }
       main {
         flex: 1;
@@ -44,18 +45,18 @@
       .home-content h1 {
         font-size: 3.5rem;
         margin: 0;
-        color: #8B0000;
+        color: var(--link);
         letter-spacing: -1px;
       }
       .home-content h2 {
         font-size: 1.4rem;
         font-weight: normal;
-        color: #666;
+        color: var(--text-muted);
         margin: 0.5rem 0 2rem 0;
       }
       .back-link {
         display: inline-block;
-        color: #8B0000;
+        color: var(--link);
         text-decoration: none;
         font-size: 1.1rem;
         margin-bottom: 2rem;
@@ -65,16 +66,14 @@
         transform: translateX(-4px);
       }
       .home-content p {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
+        color: var(--text);
       }
       .connect {
         margin-top: 4rem;
       }
       .connect h2 {
         font-size: 1.8rem;
-        color: #333;
+        color: var(--text);
         margin-bottom: 2rem;
       }
       .links-grid {
@@ -85,62 +84,64 @@
       }
       .link-card {
         padding: 1rem;
-        border: 1px solid #eee;
+        border: 1px solid var(--border);
         border-radius: 8px;
         transition: all 0.3s ease;
         text-decoration: none;
-        color: inherit;
+        color: var(--text);
+        background: var(--card-bg);
       }
       .link-card:hover {
-        border-color: #8B0000;
+        border-color: var(--link);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px var(--card-hover-shadow);
       }
       .link-card strong {
         display: block;
-        color: #8B0000;
+        color: var(--link);
         margin-bottom: 0.2rem;
         font-size: 1.1rem;
       }
       .link-card span {
-        color: #666;
+        color: var(--text-muted);
         font-size: 0.95rem;
       }
       footer {
         padding: 2rem;
         text-align: center;
-        border-top: 1px solid #eee;
+        border-top: 1px solid var(--border);
         margin-top: auto;
       }
       .social-links {
         margin-bottom: 1rem;
       }
       .social-links a {
-        color: #666;
+        color: var(--text-muted);
         margin: 0 0.8rem;
         transition: color 0.2s;
         font-size: 1.2rem;
       }
       .social-links a:hover {
-        color: #8B0000;
+        color: var(--link);
       }
       .outro {
         margin: 1.5rem 0;
         font-style: italic;
-        color: #666;
+        color: var(--text-muted);
       }
       /* Project styles */
       .project-item {
         margin: 2rem 0;
         padding: 1.5rem;
-        border: 1px solid #eee;
+        border: 1px solid var(--border);
         border-radius: 8px;
         transition: all 0.3s ease;
+        background: var(--card-bg);
       }
       .project-item:hover {
-        border-color: #8B0000;
+        border-color: var(--link);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px var(--card-hover-shadow);
       }
       .project-item h2 {
         margin: 0 0 1rem 0;
@@ -148,17 +149,14 @@
         font-weight: 600;
       }
       .project-item h2 a {
-        color: #8B0000;
+        color: var(--link);
         text-decoration: none;
       }
       .project-item h2 a:hover {
         text-decoration: underline;
       }
       .project-item p {
-        margin: 0;
-        font-size: 1.1rem;
-        line-height: 1.6;
-        color: #2c3e50;
+        color: var(--text);
       }
       /* Blog styles */
       .blog-grid {
@@ -169,36 +167,34 @@
       }
       .blog-card {
         padding: 1.5rem;
-        border: 1px solid #eee;
+        border: 1px solid var(--border);
         border-radius: 8px;
         transition: all 0.3s ease;
         text-decoration: none;
-        color: inherit;
+        color: var(--text);
         display: flex;
         flex-direction: column;
+        background: var(--card-bg);
       }
       .blog-card:hover {
-        border-color: #8B0000;
+        border-color: var(--link);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px var(--card-hover-shadow);
       }
       .blog-card h2 {
         margin: 0 0 0.5rem 0;
         font-size: 1.3rem;
         font-weight: 600;
-        color: #8B0000;
+        color: var(--link);
       }
       .blog-card time {
         font-size: 0.9rem;
-        color: #666;
+        color: var(--text-muted);
         margin-bottom: 0.8rem;
         display: block;
       }
       .blog-card p {
-        margin: 0;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: #2c3e50;
+        color: var(--text);
       }
       hr {
         display: none;
@@ -206,24 +202,24 @@
       .last-updated {
         text-align: center;
         font-size: 0.9rem;
-        color: #666;
+        color: var(--text-muted);
         margin-top: 2rem;
       }
       /* End styles */
       .newsletter-section {
         margin: 4rem auto;
         padding: 2rem;
-        background: #f8f9fa;
+        background: var(--newsletter-bg);
         border-radius: 8px;
         text-align: center;
         max-width: 600px;
       }
       .newsletter-section h2 {
-        color: #8B0000;
+        color: var(--link);
         margin-bottom: 0.5rem;
       }
       .newsletter-section p {
-        color: #666;
+        color: var(--text-muted);
         margin-bottom: 1.5rem;
       }
       .subscribe-form {
@@ -235,13 +231,18 @@
       .subscribe-form input[type="email"] {
         flex: 1;
         padding: 0.8rem;
-        border: 1px solid #ddd;
+        border: 1px solid var(--border);
         border-radius: 4px;
         font-size: 1rem;
+        background: var(--card-bg);
+        color: var(--text);
+      }
+      .subscribe-form input[type="email"]::placeholder {
+        color: var(--text-muted);
       }
       .subscribe-form button {
         padding: 0.8rem 1.5rem;
-        background: #8B0000;
+        background: var(--link);
         color: white;
         border: none;
         border-radius: 4px;
@@ -250,7 +251,8 @@
         transition: background 0.3s ease;
       }
       .subscribe-form button:hover {
-        background: #660000;
+        background: var(--link);
+        opacity: 0.9;
       }
       @media (max-width: 600px) {
         .subscribe-form {
@@ -268,7 +270,7 @@
         bottom: 20px;
         right: 20px;
         padding: 12px 20px;
-        background: #8B0000;
+        background: var(--link);
         color: white;
         border: none;
         border-radius: 25px;
@@ -280,7 +282,7 @@
       }
 
       .newsletter-trigger:hover {
-        background: #660000;
+        background: var(--link);
         transform: translateY(-2px);
       }
 
@@ -314,19 +316,19 @@
         right: 10px;
         background: none;
         border: none;
-        color: #666;
+        color: var(--text-muted);
         cursor: pointer;
         padding: 5px;
         transition: color 0.3s ease;
       }
 
       .newsletter-close:hover {
-        color: #8B0000;
+        color: var(--link);
       }
 
       /* Update existing newsletter styles */
       .newsletter-section h2 {
-        color: #8B0000;
+        color: var(--link);
         margin-bottom: 0.5rem;
         font-size: 1.5rem;
       }
@@ -341,15 +343,21 @@
       .subscribe-form input[type="email"] {
         width: 100%;
         padding: 0.8rem;
-        border: 1px solid #ddd;
+        border: 1px solid var(--border);
         border-radius: 4px;
         font-size: 1rem;
+        background: var(--card-bg);
+        color: var(--text);
+      }
+
+      .subscribe-form input[type="email"]::placeholder {
+        color: var(--text-muted);
       }
 
       .subscribe-form button {
         width: 100%;
         padding: 0.8rem;
-        background: #8B0000;
+        background: var(--link);
         color: white;
         border: none;
         border-radius: 4px;
@@ -359,7 +367,8 @@
       }
 
       .subscribe-form button:hover {
-        background: #660000;
+        background: var(--link);
+        opacity: 0.9;
       }
 
       @media (max-width: 600px) {
@@ -385,6 +394,53 @@
     {%- endblock seo -%}
 
     {% block extra_head %}
+    <!-- PostHog -->
+    <script>
+      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+      posthog.init('YOUR_POSTHOG_KEY', {api_host: 'https://app.posthog.com'})
+    </script>
+
+    <script>
+      // Theme handling
+      function getPreferredTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) return savedTheme;
+        
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        updateThemeToggle(theme);
+      }
+      
+      function updateThemeToggle(theme) {
+        const toggle = document.getElementById('theme-toggle');
+        if (toggle) {
+          toggle.innerHTML = theme === 'dark' 
+            ? '<svg viewBox="0 0 24 24"><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1-8.313-12.454z"/></svg>'
+            : '<svg viewBox="0 0 24 24"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></svg>';
+        }
+      }
+      
+      function toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+      }
+      
+      // Set initial theme
+      setTheme(getPreferredTheme());
+      
+      // Listen for system theme changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+          setTheme(e.matches ? 'dark' : 'light');
+        }
+      });
+    </script>
+
     {% endblock extra_head %}
   </head>
   {% endblock head %}
@@ -407,7 +463,7 @@
         </button>
         <h2>Subscribe to Updates</h2>
         <p>Get notified about new posts and updates</p>
-        <form action="https://formspree.io/f/xpwwgkog" method="POST" class="subscribe-form">
+        <form action="https://formspree.io/f/xpwwgkog" method="POST" class="subscribe-form" id="subscribe-form">
           <input type="email" name="email" placeholder="Enter your email" required>
           <input type="hidden" name="_subject" value="Confirm your subscription to Tarun's updates">
           <input type="hidden" name="_replyto" value="%email">
@@ -415,7 +471,7 @@
           <input type="hidden" name="_double_optin" value="true">
           <button type="submit">Subscribe</button>
         </form>
-        <small style="display: block; margin-top: 1rem; color: #666;">You'll receive a confirmation email. No spam, unsubscribe anytime.</small>
+        <small style="display: block; margin-top: 1rem; color: var(--text-muted);">You'll receive a confirmation email. No spam, unsubscribe anytime.</small>
       </div>
 
       {% block footer %}
@@ -449,25 +505,26 @@
       const newsletterTrigger = document.getElementById('newsletter-trigger');
       const newsletterPopup = document.getElementById('newsletter-popup');
       const newsletterClose = document.getElementById('newsletter-close');
-
-      // Check if user has previously closed the popup
-      const hasClosedPopup = localStorage.getItem('hasClosedNewsletter');
+      const subscribeForm = document.getElementById('subscribe-form');
 
       // Show popup automatically if user hasn't closed it before
-      if (!hasClosedPopup) {
-        // Small delay for better UX
+      if (!localStorage.getItem('hasClosedNewsletter')) {
         setTimeout(() => {
           newsletterPopup.classList.add('active');
+          // Track popup shown
+          posthog.capture('newsletter_popup_shown');
         }, 500);
       }
 
       newsletterTrigger.addEventListener('click', () => {
         newsletterPopup.classList.add('active');
+        posthog.capture('newsletter_popup_opened');
       });
 
       const closePopup = () => {
         newsletterPopup.classList.remove('active');
         localStorage.setItem('hasClosedNewsletter', 'true');
+        posthog.capture('newsletter_popup_closed');
       };
 
       newsletterClose.addEventListener('click', closePopup);
@@ -480,11 +537,22 @@
       });
 
       // Handle form submission
-      const form = document.querySelector('.subscribe-form');
-      form.addEventListener('submit', () => {
+      subscribeForm.addEventListener('submit', (e) => {
+        const email = e.target.querySelector('input[name="email"]').value;
+        
+        // Track subscription in PostHog
+        posthog.capture('newsletter_subscription_started', {
+          email: email,
+          source: 'website_popup',
+          timestamp: new Date().toISOString()
+        });
+
         localStorage.setItem('hasClosedNewsletter', 'true');
       });
     </script>
+    <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+      <svg viewBox="0 0 24 24"><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></svg>
+    </button>
   </body>
 </html>
 

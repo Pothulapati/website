@@ -61,40 +61,41 @@
     }
     .book-card {
       padding: 1rem 1.5rem;
-      border: 1px solid #eee;
+      border: 1px solid var(--border);
       border-radius: 8px;
       transition: all 0.3s ease;
       text-decoration: none;
-      color: inherit;
+      color: var(--text);
       display: block;
+      background: var(--card-bg);
     }
     .book-card:hover {
-      border-color: #8B0000;
+      border-color: var(--link);
       transform: translateX(4px);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 8px var(--card-hover-shadow);
     }
     .book-title {
       font-size: 1.1rem;
       font-weight: 500;
-      color: #8B0000;
+      color: var(--link);
       margin-bottom: 0.3rem;
       overflow: hidden;
       text-overflow: ellipsis;
     }
     .book-author {
       font-size: 0.9rem;
-      color: #666;
+      color: var(--text-muted);
       overflow: hidden;
       text-overflow: ellipsis;
     }
     .book-page-title {
       font-size: 1.8rem;
       margin: 0 0 1.5rem 0;
-      color: #2c3e50;
+      color: var(--text);
     }
     h2 {
       margin: 2rem 0 1rem;
-      color: #2c3e50;
+      color: var(--text);
     }
   </style>
 </div>
