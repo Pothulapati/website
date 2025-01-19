@@ -23,6 +23,7 @@ header_links = [
     {url = "$BASE_URL/talks", name = "Talks"},
     {url = "$BASE_URL/projects", name = "Projects"},
     {url = "$BASE_URL/setup", name = "Setup"},
+    {url = "$BASE_URL/books", name = "Books"},
     {url = "$BASE_URL/about", name = "About"},
     {url = "$BASE_URL/blog", name = "Blog"},
 ]

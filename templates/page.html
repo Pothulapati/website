@@ -17,6 +17,8 @@
 <div class="home-content">
   {% if "blog" in page.components %}
   <a href="/blog" class="back-link">← Blog</a>
+  {% elif "books" in page.components %}
+  <a href="/books" class="back-link">← Books</a>
   {% else %}
   <a href="/" class="back-link">← Home</a>
   {% endif %}

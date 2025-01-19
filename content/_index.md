@@ -5,7 +5,8 @@ template = "index.html"
 
 # Tarun Pothulapati
 
-Backend/Infra Engineer working on [DragonflyDB](https://www.dragonflydb.io)'s Managed Offering. Previously at [Gitpod](https://www.gitpod.io) and [Linkerd](https://www.linkerd.io).
+Backend/Infra Engineer working on [DragonflyDB](https://www.dragonflydb.io)'s Managed Offering. 
+Previously at [Gitpod](https://www.gitpod.io) and [Linkerd](https://www.linkerd.io).
 
 Based in Hyderabad, India. Likes to be in the 0 to 1 messy startup journey. Fixing customer problems gives me the same high as writing code.
 
@@ -25,6 +26,10 @@ Based in Hyderabad, India. Likes to be in the 0 to 1 messy startup journey. Fixi
   <a href="/blog" class="link-card">
     <strong>Blog</strong>
     <span>My thoughts and experiences</span>
+  </a>
+  <a href="/books" class="link-card">
+    <strong>Books</strong>
+    <span>What I'm reading & reviews</span>
   </a>
   <a href="https://twitter.com/tarrooon" class="link-card">
     <strong>Twitter</strong>

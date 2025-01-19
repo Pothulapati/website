@@ -1,0 +1,82 @@
+{% extends "index.html" %}
+
+{% block title %}{% if section %}Books{% else %}{{ page.title }}{% endif %} &middot; {{ config.title }}{% endblock title %}
+{% block description %}{{ config.description }}{% endblock description %}
+
+{% block content %}
+<div class="home-content">
+  {% if section %}
+  <a href="/" class="back-link">← Home</a>
+  {% else %}
+  <a href="/books" class="back-link">← Books</a>
+  {% endif %}
+  
+  {% if section %}
+  <h1>Books</h1>
+  {{ section.content | safe }}
+  
+  <div class="book-list">
+    {% for page in section.pages %}
+      {% set status = page.content | split(pat="**Status**: ") | last | split(pat="\n\n") | first %}
+      {% set is_current = status is containing("Currently Reading") %}
+      {% set author_line = page.content | split(pat="By ") | last | split(pat="\n") | first %}
+      {% set author = author_line | striptags | trim %}
+      <a href="{{ page.permalink }}" class="book-card {% if is_current %}current-read{% endif %}">
+        <div class="book-title">{{ page.title }}</div>
+        <div class="book-author">{{ author }}</div>
+      </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <h2 class="book-page-title">{{ page.title }}</h2>
+  {{ page.content | safe }}
+  {% endif %}
+
+  <style>
+    .book-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 2rem auto;
+      width: 100%;
+    }
+    .book-card {
+      padding: 1rem 1.5rem;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .book-card:hover {
+      border-color: #8B0000;
+      transform: translateX(4px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .current-read {
+      border-color: #8B0000;
+      background: rgba(139, 0, 0, 0.03);
+    }
+    .book-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #8B0000;
+      margin-bottom: 0.3rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .book-author {
+      font-size: 0.9rem;
+      color: #666;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .book-page-title {
+      font-size: 1.8rem;
+      margin: 0 0 1.5rem 0;
+      color: #2c3e50;
+    }
+  </style>
+</div>
+{% endblock content %}
