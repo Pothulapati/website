@@ -15,16 +15,35 @@
   <h1>Books</h1>
   {{ section.content | safe }}
   
+  <h2>Currently Reading</h2>
   <div class="book-list">
     {% for page in section.pages %}
       {% set status = page.content | split(pat="**Status**: ") | last | split(pat="\n\n") | first %}
       {% set is_current = status is containing("Currently Reading") %}
-      {% set author_line = page.content | split(pat="By ") | last | split(pat="\n") | first %}
-      {% set author = author_line | striptags | trim %}
-      <a href="{{ page.permalink }}" class="book-card {% if is_current %}current-read{% endif %}">
-        <div class="book-title">{{ page.title }}</div>
-        <div class="book-author">{{ author }}</div>
-      </a>
+      {% if is_current %}
+        {% set author_line = page.content | split(pat="By ") | last | split(pat="\n") | first %}
+        {% set author = author_line | striptags | trim %}
+        <a href="{{ page.permalink }}" class="book-card">
+          <div class="book-title">{{ page.title }}</div>
+          <div class="book-author">{{ author }}</div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h2>Read</h2>
+  <div class="book-list">
+    {% for page in section.pages %}
+      {% set status = page.content | split(pat="**Status**: ") | last | split(pat="\n\n") | first %}
+      {% set is_current = status is containing("Currently Reading") %}
+      {% if not is_current %}
+        {% set author_line = page.content | split(pat="By ") | last | split(pat="\n") | first %}
+        {% set author = author_line | striptags | trim %}
+        <a href="{{ page.permalink }}" class="book-card">
+          <div class="book-title">{{ page.title }}</div>
+          <div class="book-author">{{ author }}</div>
+        </a>
+      {% endif %}
     {% endfor %}
   </div>
   {% else %}
@@ -37,7 +56,7 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      margin: 2rem auto;
+      margin: 1rem auto 2rem;
       width: 100%;
     }
     .book-card {
@@ -53,10 +72,6 @@
       border-color: #8B0000;
       transform: translateX(4px);
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .current-read {
-      border-color: #8B0000;
-      background: rgba(139, 0, 0, 0.03);
     }
     .book-title {
       font-size: 1.1rem;
@@ -75,6 +90,10 @@
     .book-page-title {
       font-size: 1.8rem;
       margin: 0 0 1.5rem 0;
+      color: #2c3e50;
+    }
+    h2 {
+      margin: 2rem 0 1rem;
       color: #2c3e50;
     }
   </style>

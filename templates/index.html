@@ -203,6 +203,12 @@
       hr {
         display: none;
       }
+      .last-updated {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #666;
+        margin-top: 2rem;
+      }
       /* End styles */
     </style>
 
@@ -235,10 +241,19 @@
       <footer role="contentinfo">
         <div class="social-links">
           <a href="https://github.com/pothulapati" title="Github"><i data-feather="github"></i></a>
-          <a href="https://twitter.com/pothulapati" title="Twitter"><i data-feather="twitter"></i></a>
+          <a href="https://x.com/tarrooon" title="X"><i data-feather="twitter"></i></a>
           <a href="https://www.linkedin.com/in/tpothulapati/" title="Linkedin"><i data-feather="linkedin"></i></a>
           <a href="mailto:tarunpothulapati@outlook.com" title="email"><i data-feather="mail"></i></a>
           <a href="https://www.youtube.com/c/TarunPothulapatiDev" title="Youtube"><i data-feather="youtube"></i></a>
+        </div>
+        <div class="last-updated">
+          {% set blog = get_section(path="blog/_index.md") %}
+          {% set books = get_section(path="books/_index.md") %}
+          {% set all_pages = blog.pages | concat(with=books.pages) %}
+          {% set sorted_pages = all_pages | sort(attribute="date") | reverse %}
+          {% if sorted_pages | length > 0 %}
+            Last updated: {{ sorted_pages[0].date | date(format="%B %d, %Y") }}
+          {% endif %}
         </div>
         <small>
           Built with <a href="https://www.getzola.org/">Zola</a>
