@@ -28,7 +28,7 @@ Based in Hyderabad, India. Likes to be in the 0 to 1 messy startup journey. Fixi
   </a>
   <a href="https://twitter.com/tarrooon" class="link-card">
     <strong>Twitter</strong>
-    <span>Tech updates & life in Hyderabad</span>
+    <span>Updates & life in Hyderabad</span>
   </a>
   <a href="https://drive.google.com/file/d/1_59nnsxicU_e9v3B0eI7JnXl0ooNNHtV/view" class="link-card">
     <strong>Resume</strong>
