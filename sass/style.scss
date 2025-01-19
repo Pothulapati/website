@@ -114,37 +114,6 @@ img {
 	margin-bottom: 2rem;
 }
 
-/* Theme toggle styles */
-.theme-toggle {
-	background: none;
-	border: none;
-	padding: 0.5rem;
-	cursor: pointer;
-	position: fixed;
-	top: 1rem;
-	right: 1rem;
-	z-index: 1000;
-	color: var(--text);
-	font-size: 1.5rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	transition: background-color 0.3s;
-	
-	&:hover {
-		background: var(--border);
-	}
-	
-	svg {
-		width: 20px;
-		height: 20px;
-		fill: currentColor;
-	}
-}
-
 .home-content h1 {
 	color: var(--link);
 }
@@ -210,5 +179,35 @@ img {
 	color: var(--text-muted);
 	&:hover {
 		color: var(--link);
+	}
+}
+
+.theme-toggle {
+	background: none;
+	border: none;
+	padding: 0.5rem;
+	cursor: pointer;
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	z-index: 1000;
+	color: var(--text);
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	transition: background-color 0.3s;
+	
+	&:hover {
+		background: var(--border);
+	}
+	
+	svg {
+		width: 20px;
+		height: 20px;
+		fill: currentColor;
 	}
 }
