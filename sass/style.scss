@@ -48,3 +48,18 @@ img {
 		width: 100%;
 	}
 }
+.link-card.featured {
+	background: linear-gradient(135deg, #fff8f5, #fff2eb);
+	border: 2px solid #ff6b4a;
+	transform: scale(1.02);
+	box-shadow: 0 4px 12px rgba(255, 107, 74, 0.1);
+	
+	strong {
+		color: #ff6b4a;
+	}
+	
+	&:hover {
+		transform: scale(1.03);
+		box-shadow: 0 6px 16px rgba(255, 107, 74, 0.15);
+	}
+}
