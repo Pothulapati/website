@@ -15,7 +15,11 @@
 
 {% block content %}
 <div class="home-content">
+  {% if "blog" in page.components %}
   <a href="/blog" class="back-link">← Blog</a>
+  {% else %}
+  <a href="/" class="back-link">← Home</a>
+  {% endif %}
   <h1>{{ page.title }}</h1>
   {{ page.content | safe }}
 </div>
