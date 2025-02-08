@@ -4,9 +4,9 @@ date= "2025-02-07"
 tags= ["dev", "ai", "github", "copilot", "cursor", "codeium"]
 +++
 
-First, I have a lot of respect for GitHub Copilot. I mean, it started the whole wave of AI coding revolution with its auto-completion and code suggestions. I don't think I've recommended any tool as much as Copilot. In the initial years, if you met me, you probably got a Copilot recommendation about how awesome it was.
+First, I have a lot of respect for GitHub Copilot. I mean, it started the whole wave of the AI coding revolution with its auto-completion and code suggestions. I don't think I've recommended any tool as much as Copilot. In the initial years, if you met me, you probably got a Copilot recommendation about how awesome it was.
 
-But, except for Auto Complete, GitHub seem to have fumbled everything else. I think their missteps can be boiled down to these:
+But, except for Auto Complete, GitHub seems to have fumbled everything else. I think their missteps can be boiled down to these:
 
 ## 1. Chat Slop
 
@@ -16,7 +16,7 @@ It's AI slop at this point, and GitHub should backtrack on this. It's a shitty u
 
 ## 2. Betting only on OpenAI Models
 
-I guess being owned by Microsoft has its problems too (who would've thought). They completely focused on OpenAI models, while Claude Sonnet was **literally killing it** with code. It's hard to understate how many leaps and bounds better Sonnet is compared to OpenAI GPT models. (The O1 models could now probably compete, but it's kind of too late for that as the *vibes* have been set)
+I guess being owned by Microsoft has its problems too (who would've thought). They completely focused on OpenAI models, while Claude Sonnet was **literally killing it** with code. It's hard to overstate how many leaps and bounds better Sonnet is compared to OpenAI GPT models. (The O1 models could now probably compete, but it's kind of too late for that as the *vibes* have been set)
 
 This meant Copilot was essentially quite bad, and users were starting to use Claude directly and tools like Cody more, as they wanted Sonnet for anything code-related.
 
@@ -38,7 +38,7 @@ This essentially led to Cursor becoming the [fastest $100M ARR company in histor
 
 And the funny part is, GitHub owns VSCode too. They could've totally built what Cursor did. It was obvious from where they started i.e auto-completion and code suggestions.
 
-(Just this week, [GitHub launchedAgent Mode right inside the editor](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/) in "beta" 😅, but the vibes seem to have been *set again*)
+(Just this week, [GitHub launchedAgent Mode right inside the editor](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/) in "beta" 😅 but the vibes seem to have been *set again*.)
 
 ## 4. Nothing for (Self-hosted) Enterprises
 
@@ -54,4 +54,4 @@ It's fascinating how one company's strategic missteps became the foundation for 
 
 I'm not saying GitHub Copilot is completely failing. It has [done quite well with $300M ARR as of July 2024](https://x.com/ericabrescia/status/1818435925640364402). However, considering their resources with Microsoft, VSCode, and other advantages, they could have achieved much more. It's also nice to see startups innovate and give GitHub a tough time in their own game.
 
-I still consider the AI Code Battle to be still in fancy, and we never know how it's going to play out.
+I still consider the AI Code Battle to be still in infancy, and we never know how it's going to play out.
