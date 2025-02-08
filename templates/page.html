@@ -1,5 +1,7 @@
 {% extends "index.html" %}
 
+{% block body_class %}blog-post{% endblock %}
+
 {% block title %}{{ page.title }} &middot; {{ config.title }}{% endblock title %}
 {% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
 
@@ -26,6 +28,8 @@
   {% if "books" in page.components %}
     <p class="date">{{ page.date | date(format="%B %d, %Y") }}</p>
   {% endif %}
-  {{ page.content | safe }}
+  <article class="content">
+    {{ page.content | safe }}
+  </article>
 </div>
 {% endblock content %}
