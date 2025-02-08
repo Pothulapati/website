@@ -1,5 +1,5 @@
 +++
-title= "GitHub is Losing the AI Code Generation Battle"
+title= "How GitHub is losing the AI Code Battle"
 date= "2025-02-07"
 tags= ["dev", "ai", "github", "copilot", "cursor", "codeium"]
 +++
