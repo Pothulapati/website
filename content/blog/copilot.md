@@ -44,7 +44,7 @@ Self-hosted source control is a huge thing at many big enterprises, right? GitLa
 
 This gave rise to [another of the fastest-growing companies right now i.e., Codeium](https://www.businesswire.com/news/home/20240829623867/en/Codeium-Reaches-1.25B-Valuation-with-150M-Series-C-Funding-Led-by-General-Catalyst), who seem to be doing well with big customers like JPMorgan, etc by providing a Copilot product that [runs **entirely** in the company's environment](https://codeium.com/enterprise). A lot of enterprises seem to be wanting this, and Codeium delivered.
 
-(Now Codeium is also building a Cursor product called Windsurf, and people seem to be liking it)
+(Now Codeium is also competing with Cursor with their product called [Windsurf](https://codeium.com/windsurf), and people seem to be liking it)
 
 ## Conclusion
 
