@@ -4,13 +4,13 @@ date= "2025-02-07"
 tags= ["dev", "ai", "github", "copilot", "cursor", "codeium"]
 +++
 
-First, I have a lot of respect for GitHub Copilot. I mean, it started the whole wave of AI coding revolution with its auto-completion and code suggestions. I don't think I've recommended any tool as much as Copilot. In the initial years, if you met me, you probably got a Copilot recommendation from me about how awesome it was.
+First, I have a lot of respect for GitHub Copilot. I mean, it started the whole wave of AI coding revolution with its auto-completion and code suggestions. I don't think I've recommended any tool as much as Copilot. In the initial years, if you met me, you probably got a Copilot recommendation about how awesome it was.
 
-But, except for Copilot, GitHub did not seem to get anything else right. I think their mistakes can be boiled down to these:
+But, except for Auto Complete, GitHub seem to have fumbled everything else. I think their missteps can be boiled down to these:
 
-## 1. AI (Chat) Slop
+## 1. Chat Slop
 
-Chatting with codebases has to be the most overhyped/underutilized thing ever. I'm sure it helps in some cases, but is it as useful as it's made out to be everywhere? It's also now a solved problem. But most of Copilot's work in the last year has been around putting Copilot Chat everywhere i.e., website, pull requests, codebases, etc. I mean, now you have a chat box on every page in GitHub and it's barely used. The whole promise of AI is to *do* things, not just *chat* about them. Having one place where you can chat is good, but everywhere? We already have ChatGPT, Claude, etc., for that.
+Chatting with codebases has to be the most overhyped/underutilized thing ever. I'm sure it helps in some cases, but is it as useful as it's made out to be everywhere? It's also now a solved problem. But most of GitHub's work in the last year has been around putting Copilot Chat everywhere i.e., website, pull requests, codebases, etc. I mean, now you have a chat box on every page in GitHub and it's barely used. The whole promise of AI is to *do* things, not just *chat* about them. Having one place where you can chat is good, but everywhere? We already have ChatGPT, Claude, etc., for that.
 
 It's AI slop at this point, and GitHub should backtrack on this. It's a shitty user experience overall.
 
@@ -22,7 +22,9 @@ This meant Copilot was essentially quite bad, and users were starting to use Cla
 
 I personally found Claude (even while being outside the editor and getting limited manual copy-pasted context) to be quite better than Copilot for many of my problems.
 
-Now they have added support for other models (but they are still called "Beta" and are not the defaults). I'm not sure how users would find this appealing, knowing that Copilot has some bias toward using less effective models.
+This gave rise to so many similar offerings like [Cody](https://sourcegraph.com/cody), etc who were able to provide the user with an option to choose the model they want (including Sonnet).
+
+Now they have added support for other models (but they are still called "Beta" 😅 and are not the defaults). I'm not sure how users would find this appealing, knowing that Copilot has defaulted to the less effective models.
 
 ## 3. Wrong Agentic Abstraction
 
@@ -36,7 +38,7 @@ This essentially led to Cursor becoming the [fastest $100M ARR company in histor
 
 And the funny part is, GitHub owns VSCode too. They could've totally built what Cursor did. It was obvious from where they started i.e auto-completion and code suggestions.
 
-([GitHub now has a Agent Mode right inside the editor](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/), but the vibes seem to have been *set again*)
+(Just this week, [GitHub launchedAgent Mode right inside the editor](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/) in "beta" 😅, but the vibes seem to have been *set again*)
 
 ## 4. Nothing for (Self-hosted) Enterprises
 
@@ -50,4 +52,6 @@ This gave rise to [another of the fastest-growing companies right now i.e., Code
 
 It's fascinating how one company's strategic missteps became the foundation for multiple startups' product-market fit.
 
-I'm not saying GitHub Copilot is completely failing. It has [done quite well with $300M ARR as of July 2024](https://x.com/ericabrescia/status/1818435925640364402). However, considering their resources with Microsoft, VSCode, and other advantages, they could have achieved much more. It's also nice to see startups innovate and successfully compete with GitHub in their own game.
+I'm not saying GitHub Copilot is completely failing. It has [done quite well with $300M ARR as of July 2024](https://x.com/ericabrescia/status/1818435925640364402). However, considering their resources with Microsoft, VSCode, and other advantages, they could have achieved much more. It's also nice to see startups innovate and give GitHub a tough time in their own game.
+
+I still consider the AI Code Battle to be still in fancy, and we never know how it's going to play out.
