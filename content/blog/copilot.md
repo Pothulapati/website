@@ -26,7 +26,7 @@ This essentially led to Cursor becoming the [fastest $100M ARR company in histor
 
 And the funny part is, GitHub owns VSCode too. They could've totally built what Cursor did. It was obvious from where they started i.e auto-completion and code suggestions.
 
-(Just this week, [GitHub launchedAgent Mode right inside the editor](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/) in "beta" 😅 but the vibes seem to have been *set again*.)
+(Just this week, [GitHub launchedAgent Mode right inside the editor](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/) in *beta* 😅 but the vibes seem to have been *set again*.)
 
 ## 3. Nothing for (Self-hosted) Enterprises
 
@@ -46,7 +46,7 @@ I personally found Claude (even while being outside the editor and getting limit
 
 This gave rise to so many similar offerings like [Cody](https://sourcegraph.com/cody), etc who were able to provide the user with an option to choose the model they want (including Sonnet).
 
-Now they have added support for other models (but they are still called "Beta" 😅 and are not the defaults). I'm not sure how users would find this appealing, knowing that Copilot has defaulted to the less effective models.
+Now they have added support for other models (but they are still called *beta* 😅 and are not the defaults). I'm not sure how users would find this appealing, knowing that Copilot has defaulted to the less effective models.
 
 ## Conclusion
 
