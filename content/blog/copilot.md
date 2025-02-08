@@ -50,6 +50,4 @@ This gave rise to [another of the fastest-growing companies right now i.e., Code
 
 It's fascinating how one company's strategic missteps became the foundation for multiple startups' product-market fit.
 
-I'm not entirely writing GitHub off obviously, as distribution can always win. With all their resources (i.e Microsoft, VSCode, etc.), they could have had a lot more positive outcomes in this space. But its also nice to see
-more startups coming up with better products and doing well.
-
+I'm not saying GitHub Copilot is completely failing. It has [done quite well with $300M ARR as of July 2024](https://x.com/ericabrescia/status/1818435925640364402). However, considering their resources with Microsoft, VSCode, and other advantages, they could have achieved much more. It's also nice to see startups innovate and successfully compete with GitHub in their own game.
