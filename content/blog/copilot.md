@@ -8,11 +8,11 @@ First, I have a lot of respect for GitHub Copilot. I mean, it started the whole 
 
 But, except for Auto Complete, GitHub seems to have fumbled everything else. I think their missteps can be boiled down to these:
 
-## 1. Chat Slop
+## 1. Copilot Chat Overload
 
-Chatting with codebases has to be the most overhyped/underutilized thing ever. I'm sure it helps in some cases, but is it as useful as it's made out to be everywhere? It's also now a solved problem. But most of GitHub's work in the last year has been around putting Copilot Chat everywhere i.e., website, pull requests, codebases, etc. I mean, now you have a chat box on every page in GitHub and it's barely used. The whole promise of AI is to *do* things, not just *chat* about them. Having one place where you can chat is good, but everywhere? We already have ChatGPT, Claude, etc., for that.
+Chatting with codebases has to be the most overhyped thing ever. I'm sure it helps in some cases, but is it as useful as it's made out to be everywhere? It's also now a solved problem. But most of GitHub's work in the last year has been around putting Copilot Chat everywhere i.e., website, pull requests, codebases, etc. I mean, now you have a chat box on every page in GitHub. The whole promise of AI is to *do* things, not just *chat* about them. Having one place where you can chat is good, but everywhere? We already have ChatGPT, Claude, etc., for that.
 
-It's AI slop at this point, and GitHub should backtrack on this. It's a shitty user experience overall.
+Even on the GitHub website, Copilot Chat doesn't indicate which AI model it's using for responses (I'm not too optimistic about them using the best model), and there's no model selection capability. I usually find it more effective to copy and paste the context into personal ChatGPT or Claude (This way I can select the best model (including reasoning) for the task).
 
 ## 2. Wrong Agentic Abstraction
 
@@ -26,7 +26,8 @@ This essentially led to Cursor becoming the [fastest $100M ARR company in histor
 
 And the funny part is, GitHub owns VSCode too. They could've totally built what Cursor did. It was obvious from where they started i.e auto-completion and code suggestions.
 
-(Just this week, [GitHub launchedAgent Mode right inside the editor](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/) in *beta* 😅 but the vibes seem to have been *set again*.)
+(Just this week, [GitHub launched Agent Mode right inside the editor](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens/) in *beta* 😅 but the vibes seem to have been *set again*. Also, I don't understand why they have three different things
+i.e Chat, Edits and Agent mode and expect the user to do the selection part.)
 
 ## 3. Nothing for (Self-hosted) Enterprises
 
